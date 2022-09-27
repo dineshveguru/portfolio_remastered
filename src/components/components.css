@@ -78,6 +78,10 @@ body{
 }
 
 
+.arrow-image{
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     .nav-bar--container{
         height: 100vh;
@@ -91,6 +95,11 @@ body{
         left: 0;
     }
 
+    .nav-bar--container:hover .arrow-image{
+        transform: rotate(-270deg);
+        transition: all 0.3s;
+    }
+
     .nav-items--container ul{
         flex-direction: column;
         padding-top: 5rem;
@@ -98,6 +107,16 @@ body{
 
     .nav-items--container li{
         padding-top: 2rem;
+    }
+
+    .arrow-image{
+        display: block;
+        position: absolute;
+        width: 3rem;
+        height: 1.5rem;
+        top: 30rem;
+        transform: rotate(-90deg);
+        right: -2.5rem;
     }
 
 }

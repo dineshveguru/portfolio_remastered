@@ -11,6 +11,10 @@ function Toggle(props) {
           className={`toggle-button toggle-${props.color} ${props.color}`}
         ></div>
       </div>
+      <img
+        src={require(`../asset/scroll_${props.theme}.png`)}
+        className="arrow-image"
+      />
     </div>
   );
 }
