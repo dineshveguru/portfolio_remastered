@@ -1,0 +1,115 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar--container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    transition: all 0.3s;
+
+}
+
+.dark{
+    background-color: #191D22;
+    color: aliceblue;
+}
+
+.light{
+    background-color: aliceblue;
+    color: #191D22;
+}
+.nav-items--container{
+    width: 50%;
+    font-weight: 200;
+}
+
+.nav-items--container ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+.Toggle--container{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.toggle-button{
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    border-radius: 1rem;
+    
+}
+
+
+.toggle-dark{
+    left: 0.1rem;
+    top: 0.1rem;
+}
+
+.toggle-light{
+    right: 0.1rem;
+    top: 0.1rem;
+
+}
+
+.toggle-up-container{
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.arrow--image{
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav-bar--container{
+        height: 100vh;
+        width: 18rem;
+        position: absolute;
+        left: -16rem;
+        transition: all 0.3s;
+    }
+
+    .nav-bar--container:hover{
+        left: 0;
+    }
+
+    .nav-items--container ul{
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+
+    .nav-items--container li{
+        padding-top: 2rem;
+    }
+
+    .arrow--image{
+        display: block;
+        width: 3rem;
+        height: 2rem;
+        position: absolute;
+        left: 1rem;
+        transform: rotate(180deg);
+    }
+}

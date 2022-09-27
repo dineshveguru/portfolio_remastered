@@ -1,10 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Navbar from "./components/Navbar";
+import React from "react";
 
 function App() {
+  const [mode, setMode] = React.useState(true);
+  function changeMode() {
+    setMode((prevMode) => !prevMode);
+  }
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Navbar mode={mode} onChange={changeMode} />
     </div>
   );
 }
