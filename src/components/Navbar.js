@@ -21,10 +21,6 @@ function Navbar(props) {
         </ul>
       </div>
       <Toggle {...themes} />
-      <img
-        src={require(`../asset/arrow_${theme}.png`)}
-        className="arrow--image"
-      />
     </div>
   );
 }

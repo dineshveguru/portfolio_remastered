@@ -77,10 +77,6 @@ body{
     cursor: pointer;
 }
 
-.arrow--image{
-    display: none;
-}
-
 
 @media screen and (max-width: 800px) {
     .nav-bar--container{
@@ -104,12 +100,4 @@ body{
         padding-top: 2rem;
     }
 
-    .arrow--image{
-        display: block;
-        width: 3rem;
-        height: 2rem;
-        position: absolute;
-        left: 1rem;
-        transform: rotate(180deg);
-    }
 }
