@@ -7,9 +7,10 @@ function Navbar(props) {
   let themes = {
     color: color,
     theme: theme,
+    onChange: props.onChange,
   };
   return (
-    <div className={`nav-bar--container ${color}`} onClick={props.onChange}>
+    <div className={`nav-bar--container ${color}`}>
       <div className="nav-items--container">
         <ul>
           <li>Home</li>
