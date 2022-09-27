@@ -1,5 +1,6 @@
-import Navbar from "./components/Navbar";
 import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
   const [mode, setMode] = React.useState(true);
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar mode={mode} onChange={changeMode} />
+      <Hero />
     </div>
   );
 }
