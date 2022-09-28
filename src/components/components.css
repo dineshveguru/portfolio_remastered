@@ -5,6 +5,7 @@ html{
 body{
     font-family: 'Inter', sans-serif;
     position: relative;
+    width: 100%;
 }
 
 *{
@@ -23,7 +24,8 @@ body{
     position: relative;
     transition: all 0.3s;
     z-index: 3;
-
+    height: 3rem;
+    align-items: center;
 }
 
 .dark{
@@ -188,6 +190,7 @@ body{
         position: absolute;
         left: -16rem;
         transition: all 0.3s;
+        align-items: flex-start;
     }
 
     .nav-bar--container:hover{
@@ -222,7 +225,17 @@ body{
     /* hero-container */
 
     .hero-container{
-        height: 100vh;
+        height: 100vh; 
+        left: 2rem; 
     }
+
+    .hero-container h1{
+        font-size: 4rem;
+    }
+
+    .skill-banner{
+        font-size: 1.7rem;
+    }
+
 
 }
