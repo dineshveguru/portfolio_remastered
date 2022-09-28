@@ -87,6 +87,10 @@ body{
 
 /* hero container */
 
+.top-container{
+    position: relative;
+}
+
 .hero-container{
     height: 95vh;
     display: flex;
@@ -165,6 +169,16 @@ body{
 
 .scroll-down--image{
     margin-bottom: 1rem;
+}
+
+.blob{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 2rem;
+    background: linear-gradient(180deg, #00FFFF 0%, #56FFEB 54.48%, #9E00FF 100%);
+    filter: blur(150px);
 }
 
 @media screen and (max-width: 800px) {

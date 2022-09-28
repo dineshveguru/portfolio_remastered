@@ -19,6 +19,7 @@ function Hero() {
           className="scroll-down--image"
         />
       </div>
+      <div className="blob"></div>
     </div>
   );
 }
