@@ -10,17 +10,19 @@ function Navbar(props) {
     onChange: props.onChange,
   };
   return (
-    <div className={`nav-bar--container ${color}`}>
-      <div className="nav-items--container">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Certifications</li>
-          <li>Contact me</li>
-        </ul>
+    <div className="nav-top">
+      <div className={`nav-bar--container ${color}`}>
+        <div className="nav-items--container">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Certifications</li>
+            <li>Contact me</li>
+          </ul>
+        </div>
+        <Toggle {...themes} />
       </div>
-      <Toggle {...themes} />
     </div>
   );
 }
