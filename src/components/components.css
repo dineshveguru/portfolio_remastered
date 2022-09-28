@@ -39,7 +39,7 @@ body{
 }
 .nav-items--container{
     width: 50%;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .nav-items--container ul{
@@ -123,6 +123,11 @@ body{
     color: #F0F8FF;
 }
 
+.hero--light{
+    background-color: #fff;
+    color: #1F2329;   
+}
+
 .skill-banner{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -185,7 +190,7 @@ body{
 
 @media screen and (max-width: 800px) {
     .nav-bar--container{
-        height: 100vh;
+        height: 97vh;
         width: 18rem;
         position: absolute;
         left: -16rem;
@@ -226,7 +231,6 @@ body{
 
     .hero-container{
         height: 100vh; 
-        left: 2rem; 
     }
 
     .hero-container h1{

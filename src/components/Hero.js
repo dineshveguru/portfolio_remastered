@@ -1,7 +1,9 @@
-function Hero() {
+function Hero(props) {
+  const color = props.mode ? "dark" : "light";
+  const theme = props.mode ? "light" : "dark";
   return (
     <div className="hero-top">
-      <div className="hero-container hero--dark">
+      <div className={`hero-container hero--${color}`}>
         <div className="name-banner">
           <h1>Hello, there👋</h1>
           <h1>
@@ -16,7 +18,7 @@ function Hero() {
         <div className="scroll-banner">
           <p>Scroll down</p>
           <img
-            src={require(`../asset/scroll_light.png`)}
+            src={require(`../asset/scroll_${theme}.png`)}
             className="scroll-down--image"
           />
         </div>

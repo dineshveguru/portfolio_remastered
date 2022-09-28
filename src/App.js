@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar mode={mode} onChange={changeMode} />
-      <Hero />
+      <Hero mode={mode} />
     </div>
   );
 }
