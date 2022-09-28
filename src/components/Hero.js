@@ -14,7 +14,10 @@ function Hero() {
       </div>
       <div className="scroll-banner">
         <p>Scroll down</p>
-        <img src={require(`../asset/scroll_dark.png`)} />
+        <img
+          src={require(`../asset/scroll_light.png`)}
+          className="scroll-down--image"
+        />
       </div>
     </div>
   );

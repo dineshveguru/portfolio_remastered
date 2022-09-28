@@ -111,10 +111,6 @@ body{
 
 }
 
-.scroll-banner{
-    position: absolute;
-    bottom: 0rem;
-}
 
 .hero--dark{
     background-color: #1F2329;
@@ -155,6 +151,20 @@ body{
     color: #F0F8FF;
     border: 0;
     cursor: pointer;
+}
+
+.scroll-banner{
+    position: absolute;
+    bottom: 0rem;
+}
+
+.scroll-banner p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.scroll-down--image{
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 800px) {
