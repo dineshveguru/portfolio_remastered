@@ -88,7 +88,7 @@ body{
 /* hero container */
 
 .hero-container{
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
