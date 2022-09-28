@@ -97,7 +97,7 @@ body{
     text-align: center;
 }
 
-.name-banner span{
+.name-banner h1 span{
     background: linear-gradient(99.16deg, #00D1FF 35.11%, #00D1FF 35.11%, #8F00FF 77.1%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -124,10 +124,38 @@ body{
 .skill-banner{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+.developer{
+    font-family: 'JetBrains Mono', monospace;
+    background: linear-gradient(266.68deg, #9E00FF 9.38%, rgba(206, 127, 255, 0.72) 102.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-left: 1rem;   
 }
 
 
+.designer{
+    background: linear-gradient(93.92deg, #00D1FF -6.03%, rgba(43, 217, 255, 0.71) 78.45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-right: 1rem;
+}
+
+.resume-download--button{
+    padding: 1.2rem 1rem;
+    border-radius: 1rem;
+    width: 20rem;
+    background: linear-gradient(92.89deg, #61DAFB -1.92%, rgba(158, 0, 255, 0.5) 117.71%);
+    color: #F0F8FF;
+    border: 0;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 800px) {
     .nav-bar--container{
@@ -155,6 +183,7 @@ body{
     .nav-items--container li{
         padding-top: 2rem;
     }
+
 
     .arrow-image{
         display: block;
