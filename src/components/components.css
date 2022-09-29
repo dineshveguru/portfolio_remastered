@@ -134,7 +134,15 @@ body{
 
 .hero--light{
     background-color: #fff;
-    color: #1F2329;   
+    color: #1F2329;  
+}
+
+.font--dark p{
+    font-weight: 200;
+}
+
+.font--light p{
+    font-weight: 400;
 }
 
 .skill-banner{
@@ -190,11 +198,14 @@ body{
 .blob{
     width: 20rem;
     height: 20rem;
+    background: linear-gradient(180deg, #00FFFF 0%, #56FFEB 54.48%, #9E00FF 100%);
+    filter: blur(150px);
+}
+
+.blob-one--position{
     position: absolute;
     right: 0rem;
     bottom: 2rem;
-    background: linear-gradient(180deg, #00FFFF 0%, #56FFEB 54.48%, #9E00FF 100%);
-    filter: blur(150px);
 }
 
 /* About  */
@@ -237,6 +248,7 @@ body{
 .about--section{
     padding: 2rem 1rem;
     font-size: 2rem;
+    font-weight: 200;
 }
 
 .about--section span{
@@ -254,6 +266,35 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+}
+
+.tech--container img{
+    width: 9rem;
+    height: 9rem;
+    opacity: 0.5;
+}
+
+.tech--container div:hover{
+    transform: scale(130%);
+    transition: all 0.3s;
+}
+
+.tech--container div:hover svg{
+    fill-opacity: 1;
+    transition: all 0.3s;
+}
+
+
+.tech--container div:hover img{
+    opacity: 1;
+    transition: all 0.3s;
+
+}
+
+.blob-two--position{
+    position: absolute;
+    left: 1rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -329,5 +370,9 @@ body{
 
     .about--section{
         font-size: 1.5rem;
+    }
+
+    .intro--container{
+        flex-direction: column-reverse;
     }
 }

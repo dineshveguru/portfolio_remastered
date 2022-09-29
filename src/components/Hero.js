@@ -22,7 +22,7 @@ function Hero(props) {
             className="scroll-down--image"
           />
         </div>
-        <div className="blob"></div>
+        <div className="blob blob-one--position"></div>
       </div>
     </div>
   );
