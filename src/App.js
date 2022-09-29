@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Navbar mode={mode} onChange={changeMode} />
       <Hero mode={mode} />
-      <About />
+      <About mode={mode} />
     </div>
   );
 }

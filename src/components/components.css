@@ -61,6 +61,7 @@ body{
     height: 2rem;
     border-radius: 1rem;
     position: relative;
+    transition: all 0.3s;
 }
 
 .toggle-button{
@@ -68,7 +69,7 @@ body{
     height: 1.8rem;
     position: absolute;
     border-radius: 1rem;
-    
+    transition: all 0.3s;   
 }
 
 
@@ -101,7 +102,7 @@ body{
 }
 
 .hero-container{
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,8 +200,10 @@ body{
 /* About  */
 
 .about-container{
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
+    overflow: hidden;
+    padding: 3rem 3rem;
 }
 
 .intro--container{
@@ -208,6 +211,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
 }
 
 .image--container{
@@ -225,9 +229,31 @@ body{
     width: 34rem;
     height: 34rem;
     border-radius: 17rem;
-    background: url("../asset/VIJ07228.JPG");
+    background: url("../asset/test.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.about--section{
+    padding: 2rem 1rem;
+    font-size: 2rem;
+}
+
+.about--section span{
+    background: linear-gradient(91.38deg, #00D1FF 33.72%, #8F00FF 50.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.tech--container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -285,4 +311,23 @@ body{
     }
 
 
+    /* About */
+
+    .image--container{
+        width: 30rem;
+        height: 30rem;
+        border-radius: 15rem;
+    }
+
+
+    .image--box{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 12.5rem;
+
+    }
+
+    .about--section{
+        font-size: 1.5rem;
+    }
 }
