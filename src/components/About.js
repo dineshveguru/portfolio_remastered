@@ -3,6 +3,9 @@ function About(props) {
   const theme = props.mode ? "light" : "dark";
   return (
     <div className={`about-container hero--${color}`}>
+      <div className="heading--container">
+        <p className="heading">About me</p>
+      </div>
       <div className="intro--container">
         <div className={`about--section font--${color}`}>
           <p>

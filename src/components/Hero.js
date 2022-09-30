@@ -1,6 +1,17 @@
 function Hero(props) {
   const color = props.mode ? "dark" : "light";
   const theme = props.mode ? "light" : "dark";
+  const onButtonClick = () => {
+    fetch("resume_dinesh.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "resume_dinesh.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <div className="hero-top">
       <div className={`hero-container hero--${color}`}>
@@ -13,7 +24,9 @@ function Hero(props) {
             <span className="designer">Designer</span>+
             <span className="developer">Developer</span>
           </p>
-          <button className="resume-download--button">Download Resume</button>
+          <button className="resume-download--button" onClick={onButtonClick}>
+            Download Resume
+          </button>
         </div>
         <div className="scroll-banner">
           <p>Scroll down</p>

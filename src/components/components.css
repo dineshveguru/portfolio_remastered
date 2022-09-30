@@ -97,6 +97,7 @@ body{
 
 /* hero container */
 
+
 .top-container{
     position: relative;
 }
@@ -149,6 +150,7 @@ body{
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 2rem;
+
 }
 
 .developer{
@@ -209,6 +211,20 @@ body{
 }
 
 /* About  */
+
+.heading{
+    font-size: 2.5rem;
+    font-weight: 300;
+    border-bottom: 1.5px solid #00D1FF;
+    width: max-content;
+}
+
+.heading--container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 .about-container{
     max-width: 100%;
@@ -374,5 +390,9 @@ body{
 
     .intro--container{
         flex-direction: column-reverse;
+    }
+
+    .heading--container{
+        margin-bottom: 3rem;
     }
 }
