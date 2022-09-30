@@ -231,7 +231,7 @@ function About(props) {
           <img src={require("../asset/python.png")} />
         </div>
       </div>
-      <div className="blob"></div>
+      <div className="blob blob-two--position"></div>
     </div>
   );
 }
