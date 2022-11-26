@@ -10,6 +10,7 @@ function Projects(props) {
         title={project.title}
         techStack={project.tech_stack}
         link={project.link}
+        theme={color}
       />
     );
   });

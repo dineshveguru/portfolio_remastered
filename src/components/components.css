@@ -339,21 +339,30 @@ body{
 
 .project--card{
     display: flex;
+    width: 18rem;
+    height: 20rem;
     flex-direction: column;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.3) 0%, rgba(217, 217, 217, 0.1) 100%);
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(180deg, rgba(217, 217, 217, 0.3) 0%, rgba(217, 217, 217, 0.1) 100%); */
+    /* background-color: #191D22; */
     backdrop-filter: blur(15px);
     border-radius: 2rem;
     padding: 3rem 2rem;
     justify-content: space-around;
-
+    /* box-shadow: 0px 0px 30px 5px #191D22; */
+    z-index: 3;
 }
 
-.project--card button{
+.project--card a{
     background: linear-gradient(92.89deg, rgba(97, 218, 251, 0.6) -1.92%, rgba(158, 0, 255, 0.5) 117.71%);
     border-radius: 0.5rem;
     border: 0;
+    text-align: center;
+    text-decoration: none;
     padding: 1rem 0.5rem;
-    display: none;
+    color: #fff;
+    font-weight: 400;
 }
 
 .projects--container{

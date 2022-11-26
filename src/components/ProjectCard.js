@@ -5,10 +5,13 @@ function ProjectCard(props) {
     return <TechImage image={icon} />;
   });
   return (
-    <div className="project--card">
+    <div className={`project--card ${props.theme}`}>
       <p>{props.title}</p>
       <div className="tech-image--container">{techImages}</div>
-      <button>View on GitHub</button>
+      {/* <button>View on GitHub</button> */}
+      <a href={props.link} target="blank">
+        View on GitHub
+      </a>
     </div>
   );
 }
