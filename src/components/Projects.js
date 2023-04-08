@@ -3,7 +3,6 @@ import ProjectCard from "./ProjectCard";
 
 function Projects(props) {
   const color = props.mode ? "dark" : "light";
-  const theme = props.mode ? "light" : "dark";
   const projectCards = ProjectsData.map((project) => {
     return (
       <ProjectCard
@@ -15,7 +14,7 @@ function Projects(props) {
     );
   });
   return (
-    <div className={`projects--section hero--${color}`}>
+    <div className={`projects--section`} ref={props.activeDiv}>
       <div className="heading--container">
         <p className="heading">My Projects</p>
       </div>

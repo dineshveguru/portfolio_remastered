@@ -14,11 +14,15 @@ function Navbar(props) {
       <div className={`nav-bar--container ${color}`}>
         <div className="nav-items--container">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Certifications</li>
-            <li>Contact me</li>
+            <li onClick={props.clickEvents.hero} className="nav--items">
+              Home
+            </li>
+            <li onClick={props.clickEvents.about} className="nav--items">
+              About
+            </li>
+            <li onClick={props.clickEvents.projects} className="nav--items">
+              Projects
+            </li>
           </ul>
         </div>
         <Toggle {...themes} />

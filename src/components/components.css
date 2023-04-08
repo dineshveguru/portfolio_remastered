@@ -56,6 +56,8 @@ body{
     font-size: 1.5rem;
 }
 
+
+
 .Toggle--container{
     width: 4rem;
     height: 2rem;
@@ -95,6 +97,15 @@ body{
     display: none;
 }
 
+.nav--items{
+    cursor: pointer;
+}
+
+.nav--items:hover{
+    color: #00D1FF;
+    transition: all 0.3s;
+}
+
 /* hero container */
 
 
@@ -128,7 +139,7 @@ body{
 }
 
 
-.hero--dark{
+/* .hero--dark{
     background-color: #1F2329;
     color: #F0F8FF;
 }
@@ -136,7 +147,7 @@ body{
 .hero--light{
     background-color: #fff;
     color: #1F2329;  
-}
+} */
 
 .font--dark p{
     font-weight: 200;
@@ -234,7 +245,8 @@ body{
 
 .about-container{
     max-width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     overflow: hidden;
     padding: 3rem 3rem;
 }
@@ -262,7 +274,7 @@ body{
     width: 34rem;
     height: 34rem;
     border-radius: 17rem;
-    background: url("../asset/test.jpg");
+    background: url("../asset/about\ image.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -403,6 +415,30 @@ body{
     cursor: pointer;
 }
 
+
+
+.details--container{
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Contact Section */
+
+.link-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.links--container{
+    width: 100%;
+    height: 30vh;
+    background-color: #00D1FF;
+}
+
+
 @media screen and (max-width: 800px) {
     .nav-bar--container{
         height: 97vh;
@@ -430,7 +466,6 @@ body{
     .nav-items--container li{
         padding-top: 2rem;
     }
-
 
     .arrow-image{
         display: block;

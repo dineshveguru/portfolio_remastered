@@ -1,8 +1,7 @@
 function About(props) {
   const color = props.mode ? "dark" : "light";
-  const theme = props.mode ? "light" : "dark";
   return (
-    <div className={`about-container hero--${color}`}>
+    <div className={`about-container`} ref={props.activeDiv}>
       <div className="heading--container">
         <p className="heading">About me</p>
       </div>
@@ -152,7 +151,7 @@ function About(props) {
           </svg>
         </div>
         <div>
-          <img src={require("../asset/redux.png")} />
+          <img src="https://user-images.githubusercontent.com/82778240/214656430-5d3e29db-18a4-428e-93df-418df6d71da8.png" />
         </div>
         <div>
           <svg
@@ -225,10 +224,10 @@ function About(props) {
           </svg>
         </div>
         <div>
-          <img src={require("../asset/java.png")} />
+          <img src="https://user-images.githubusercontent.com/82778240/214655457-3457f7e1-9aa5-42be-a55d-92e15f6291b7.png" />
         </div>
         <div>
-          <img src={require("../asset/python.png")} />
+          <img src="https://user-images.githubusercontent.com/82778240/214656233-d6712346-9441-4fc2-9203-909d8f247a59.png" />
         </div>
       </div>
       <div className="blob blob-two--position"></div>

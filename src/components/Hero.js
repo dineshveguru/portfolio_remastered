@@ -1,5 +1,4 @@
 function Hero(props) {
-  const color = props.mode ? "dark" : "light";
   const theme = props.mode ? "light" : "dark";
   const onButtonClick = () => {
     fetch("resume_dinesh.pdf").then((response) => {
@@ -13,8 +12,8 @@ function Hero(props) {
     });
   };
   return (
-    <div className="hero-top">
-      <div className={`hero-container hero--${color}`}>
+    <div className="hero-top" ref={props.activeDiv}>
+      <div className={`hero-container`}>
         <div className="name-banner">
           <h1>Hello, there👋</h1>
           <h1>
