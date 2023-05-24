@@ -38,4 +38,12 @@ export default [
     ],
     link: "https://github.com/dineshveguru/flappybird",
   },
+  {
+    title: "Eamcet Score Viewer",
+    tech_stack: [
+      "https://user-images.githubusercontent.com/82778240/230734477-5920d7c0-a6f6-4afc-8ed7-69e1790a6a15.png",
+      "https://github.com/dineshveguru/marks_scraping/assets/82778240/0298550e-0cdb-4268-9058-8eb90e8b2300",
+    ],
+    link: "https://github.com/dineshveguru/marks_scraping",
+  },
 ];
