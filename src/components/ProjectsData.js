@@ -14,7 +14,7 @@ export default [
     link: "https://github.com/dineshveguru/portfolio_remastered",
   },
   {
-    title: "Memories",
+    title: "Moments",
     tech_stack: [
       "https://user-images.githubusercontent.com/82778240/230734157-d17d4983-9c68-4ce2-99cc-9ab581162739.png",
       "https://user-images.githubusercontent.com/82778240/230734153-4b65efec-96ad-4e0f-8d43-66d04b2fe3fc.png",
