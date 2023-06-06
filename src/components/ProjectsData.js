@@ -20,7 +20,7 @@ export default [
       "https://user-images.githubusercontent.com/82778240/230734153-4b65efec-96ad-4e0f-8d43-66d04b2fe3fc.png",
       "https://user-images.githubusercontent.com/82778240/230734123-d24db5d3-570b-42ef-b008-84d7f1c3b153.png",
     ],
-    link: "https://github.com/dineshveguru/memories",
+    link: "https://github.com/dineshveguru/moments",
   },
   {
     title: "Day Organizer",
